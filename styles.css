@@ -1,0 +1,14 @@
+.checked{
+    text-decoration: line-through;
+}
+
+.close{
+    display: none;
+}
+
+/*
+    Thinking
+        1. "line'through' value used for our text-decoration property. This will allow us to check off any items we click on.
+
+        2. A display of none is given to our span element when we click it, which removes it from the user's view, but the actual element is still inside the DOM.
+*/

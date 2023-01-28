@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Shopping List</title>
+
+        <!-- Link Google Font -->
+        <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+        
+        <!-- 1 -->
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <div class="container">
+            <h2>Shopping List</h2>
+
+            <div class="header">
+                <input type="text" id="input" placeholder="Item">
+
+                <!-- 2 -->
+                <span onclick="addItem()" id="addBtn">Add Item</span>
+            </div>
+            
+            <!-- 3 -->
+            <ul id="itemList"></ul>
+        </div>
+
+        <!-- 4 -->
+        <script src="main.js"></script>
+    </body>
+</html>
+
+<!-- 
+    Thinking
+        1. Link to our styles, so we can change the appearance of our elements.
+
+        2. Added event handler directly onto this element. When clicked "addItem" function will execute. This will add the item we have entered onto our list.
+
+        3. Every shopping list item we add will be added as a <li> inside our unordered list.
+
+        4. Link to our javascript. Script placed here for performance reasons, and to ensure all html has correctly rendered before applying our javascript.
+ -->
